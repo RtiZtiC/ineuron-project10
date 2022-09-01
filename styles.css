@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://project-10-interior-design-website.vercel.app/bg.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.puzzle
+{
+    background-color: white;
+    border-radius: 50px;
+    width:20%;
+    padding: 3% 5%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    gap:100px;
+    padding-top: 1.5%;
+}
+
+
+.bulb{
+    background-color: white;
+    border-radius: 50px;
+    width:20%;
+    padding: 2% 5%;
+
+}
+
+.logo{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top:30px;
+}
+
+.options{
+    display: flex;
+    gap:30px;
+    width: 650px;
+    justify-content: space-between;
+    position: relative;
+    left:100px;
+    top:30px;
+}
+
+.item{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.1rem;
+    width: 100px;;
+    text-decoration: none;
+    color:white;
+}
+
+.call-us
+{
+    display: flex;
+    height: 50px;
+    width:200px;
+    gap:30px;
+}
+
+.call{
+    width: 60px;
+    height: 60px;;
+    color: white;
+}
+.call-section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right:30px;
+
+}
+
+.navtotal{
+    display: flex;
+    flex-direction: column;
+}
+.text-call
+{ 
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.text-call-number
+{ 
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: inline;
+}
+
+.bigline{
+    width:73%;
+    height: 3px;
+    background-color:white;
+    margin-top: 2%;
+    align-self: flex-end;
+    color: white;
+}
+
+.mid-section{
+    position: relative;
+    top:80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.heading-text{
+    font-family: "Poppins";
+    font-weight: 800;
+    font-size: 3.5rem;
+    padding-right:5%;
+    line-height: 5rem;
+    color: white;
+
+}
+
+.learn-btn
+{
+    width: 300px;
+    height: 70px;
+    color:white;
+    background: transparent;
+    padding: 1.2% 5%;
+    border : 5px solid ;
+    border-radius: 35px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 50px;;
+}
+
+.info-div1
+{
+    position: relative;
+    height:160px;
+    width: 300px;
+    background-color: rgba(255,255,255, 0.2);
+    border-radius: 5px;
+    top:250px;
+    left: 20px;
+    display: flex;
+
+}
+
+.info-div0{
+    display: flex;
+    flex-direction: column;
+    width:700px;
+}
+.div1{
+    position: relative;
+    left:30px;
+    top:20px;
+}
+.div2{
+    position: relative;
+    left:30px;
+    top:20px;
+}
+
+
+.info-div2
+{
+    position: relative;
+    height:160px;
+    width: 300px;
+    background-color: rgba(255,255,255, 0.2);
+    border-radius: 5px;
+    right: 80px;
+    display: flex;
+    flex-direction: column;
+
+}
+.vertical{
+    width:11%;
+    position: relative;
+    top:33px;
+    left:180px;
+}
+
+.horizontal{
+    height:75%;
+    position: relative;
+    transform: rotate(-90deg);
+    left:92px;
+}
+
+.info-text{
+    width:250px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    top:15px;
+}
+
+.navbar{
+    color: white;
+}
+@media screen and (max-width:976px) {
+    .mid-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .options{
+        color: white;
+        left: 0px;
+    }
+    .call-section{
+        right: 0px;
+    }
+    .info-div0{
+        align-items: center;
+        padding-bottom:3%;
+    }
+    body{
+        background-color: #062238;
+    }
+    .heading-text{
+        color: white;
+    }
+    .learn-btn{
+
+        color: white;
+    }
+    .navtotal{
+        align-items: center;
+        padding-bottom: 3%;
+        right:90px;
+    }
+    .bigline{
+       align-self: center;
+       width: 50%; 
+    }
+    .heading-text{
+        font-size: 2rem;
+        position: relative;
+        bottom: 50px;;
+    }
+    .learn-btn{
+        position: relative;
+        bottom: 70px;
+        width: 250px;
+    }
+    .info-div1{
+        visibility: hidden;
+    }
+    .info-div2{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:768px) {
+    .options{
+        visibility: hidden;
+    }
+    .navbar{
+        gap:20px;
+    }
+    .logo{
+        right: 10px;;
+    }
+    .heading-text{
+        text-align: center;
+        padding: 2% 20%;
+    }
+    .learn-btn{
+        font-size: 1.2rem;
+        width: 200px;
+    }
+}
